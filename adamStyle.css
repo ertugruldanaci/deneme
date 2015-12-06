@@ -3,8 +3,6 @@
 body{
 	background-color: #E75480;
 	font-family: Arial, Helvetica, serif;
-	text-align: center;
-	/*text-transform: capitalize;*/
 }
 h1{
 	font-size: 1.75em;
@@ -16,65 +14,47 @@ h1{
 	background:#D8C101;
 }
 #uyari{
-    color: #D90073;
+    color: #A20025;
 	font-size:20;
 }
 #adaminResmi{
-	width:480;
-	height:270;
+	width:100%;
 }
 #kelime{
+    color: #240710;
     font-size: 20;
 }
 #alfabe a{
-	color: #0050EF;
+	color: #292373;
 	text-decoration:none;
 	background-color: transparent;
+	font-family: Arial, Helvetica, serif;
+	text-transform: capitalize;
 }
 #buton{
 	
 }
-#yenidenBaslatButonu:link{
-	background-color: #0000FF;
-    border:2px solid #dcdcdc;
-    display:inline-block;
-    cursor:pointer;
-    color:#666666;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    padding:6px 24px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #ffffff;
+#yenidenBaslatButonu {
+	font-family: Arial, Helvetica, serif;
+	background-color: #F4CDB7;
+    color: #08091C;
+    font-size: 15px;
+    border: 2px outset #F51A92;
+}
+#yenidenBaslatButonu:hover{ /* Üstüne gelince yap */
+	background-color: #7982F3;
+    border: 2px outset #F51A92;
 	
 }
-#yenidenBaslatButonu:visited{
-    background-color:#f9f9f9;
-    border:0px solid #dcdcdc;
-    display:inline-block;
-    cursor:pointer;
-    color:#666666;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    padding:6px 24px;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #ffffff;
-	
-}
-#yenidenBaslatButonu:hover{
-	background-color: #FF00FF;
-	
-}
-#yenidenBaslatButonu:active{
+#yenidenBaslatButonu:active{ /* Tıklayınca yap */
 	background-color: #008080;
+    border: 2px outset #F51A92;
     position:relative;
     top:1px;
 	
 }
 .harfler{
 	font-size: 25;
-	
 }
 
 #baslik{

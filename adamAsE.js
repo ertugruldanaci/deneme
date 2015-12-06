@@ -1,15 +1,19 @@
 /* BBY261 Adam Asmaca Uygulaması Ertuğrul Danacı*/
 
 var kelimeler = [
-    { kelime: 'dokumantasyonmerkezi', ipucu: 'Bir tür bilgi merkezi' },
-    { kelime: 'arşiv', ipucu: 'Belgelerin yaşam döngüsünü tamamladıktan sonra başlayan süreç. ' },
+    { kelime: 'kütüphane', ipucu: 'Bir tür bilgi merkezi' },
+    { kelime: 'arşiv', ipucu: 'Belgelerin yaşam döngüsünü tamamladıktan sonra başlayan süreç' },
     { kelime: 'ünak', ipucu: 'Üniversite ve Araştırma Kütüphanecileri Derneği (kısa)' },
-	{ kelime: 'vukuf', ipucu: 'Deneyimlerimizden oluşan ve başkasına aktarılamayan bilgi türü.' },
-    { kelime: 'veritabanı', ipucu: 'Akademik makaleleri içeren elektronik kaynaklar.' },
-    { kelime: 'atıfdizini', ipucu: 'WOS, Scopus gibi veritabanlarından önce aynı amaçla kullanılan basılı kaynaklar.' },
-	{ kelime: 'gazeteer', ipucu: 'Coğrafi bilgi veren bir tür danışma kaynağı.'}
+	{ kelime: 'knowledge', ipucu: 'Deneyimlerimizden oluşan ve başkasına aktarılamayan bilgi türü (İngilizce)' },
+    { kelime: 'ulaşım', ipucu: 'Beytepe Kampüsünün en büyük sıkıntısı' },
+    { kelime: 'dizin', ipucu: 'Aradığınız konuyu kitabın içinde çabucak bulmanıza yardımcı olan şey' },
+	{ kelime: 'gazeteer', ipucu: 'Coğrafi bilgi veren bir tür danışma kaynağı'},
+	{ kelime: 'yakınsama', ipucu: 'Teknolojilerin fingirdeşmesi, iç içe geçmesi'},
+	{ kelime: 'veri', ipucu: 'İşlenmemiş ham bilgi'},
+	{ kelime: 'data', ipucu: 'İşlenmemiş ham bilgi (İngilizce)'},
+	{ kelime: 'telefon', ipucu: 'Beş yıl sonra insanların organı haline gelecek olan elektronik cihaz'},
 ];
-var alfabe =["a","b","c","ç","d","e","f","g","ğ","h","ı","i","j","k","l","m","n","o","ö","p","r","s","ş","t","u","ü","v","y","z"];
+var alfabe =["a","b","c","ç","d","e","f","g","ğ","h","ı","i","j","k","l","m","n","o","ö","p","r","s","ş","t","u","ü","v","w","x","y","z"];
 var secilenArr = kelimeSec()
 var secilenKelime = secilenArr[0]
 var secilenIpucu = secilenArr[1]
@@ -28,7 +32,7 @@ function hazirla(){
 	document.getElementById('ipucu').innerHTML += "</br>" + secilenIpucu + " </br></br>"
     adamAs()
     alfabeGoster()
-	document.getElementById('uyari').innerHTML = "Başlamak için bir harfe dokun"
+	document.getElementById('uyari').innerHTML = "Başlamak için bir harfe dokun..."
 }
 
 function kelimeSec(){
@@ -63,7 +67,7 @@ function varmi(harf){
 				kelimeDizi[i] = harf;
             	document.getElementById('kelime').innerHTML += "<b>" +kelimeDizi[i] + " </b>"
 				if(kelimeDizi.indexOf("_") == -1){
-					document.getElementById('uyari').innerHTML="Tebrikler, Oyunu kazandiniz !"
+					document.getElementById('uyari').innerHTML="Tebrikler, Oyunu kazandınız!"
 					document.getElementById('alfabe').innerHTML=""
 				}
             }
@@ -74,7 +78,7 @@ function harfYok(){
 	document.getElementById('uyari').innerHTML = "Harf yok :("
 	hataSayisi = hataSayisi + 1
 	if(hataSayisi == 6){
-		document.getElementById('uyari').innerHTML = "Adam Asıldı"
+		document.getElementById('uyari').innerHTML = "Adam Asıldı!"
 		// Buraya oyunu yeniden başlatma butonu koyulacak
 		document.getElementById('alfabe').innerHTML = ""
 
