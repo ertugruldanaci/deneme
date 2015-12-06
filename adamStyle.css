@@ -1,0 +1,82 @@
+/* BBY261 Adam Asmaca Uygulaması Ertuğrul Danacı */
+
+body{
+	background-color: #E75480;
+	font-family: Arial, Helvetica, serif;
+	text-align: center;
+	/*text-transform: capitalize;*/
+}
+h1{
+	font-size: 1.75em;
+}
+#icerik{
+	background-color:#0050EF;
+}
+#ipucu{
+	background:#D8C101;
+}
+#uyari{
+    color: #D90073;
+	font-size:20;
+}
+#adaminResmi{
+	width:480;
+	height:270;
+}
+#kelime{
+    font-size: 20;
+}
+#alfabe a{
+	color: #0050EF;
+	text-decoration:none;
+	background-color: transparent;
+}
+#buton{
+	
+}
+#yenidenBaslatButonu:link{
+	background-color: #0000FF;
+    border:2px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+	
+}
+#yenidenBaslatButonu:visited{
+    background-color:#f9f9f9;
+    border:0px solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+	
+}
+#yenidenBaslatButonu:hover{
+	background-color: #FF00FF;
+	
+}
+#yenidenBaslatButonu:active{
+	background-color: #008080;
+    position:relative;
+    top:1px;
+	
+}
+.harfler{
+	font-size: 25;
+	
+}
+
+#baslik{
+	background:#D8C101;
+}
